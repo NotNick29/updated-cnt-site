@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="canteen.css"/>
+    <title>Canteen</title>
+
+    <!-- Google Font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700;900&family=Righteous&display=swap" rel="stylesheet">
+
+</head>
+<body class="bg-dark">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid p-3 bg-dark bg-gradient bg-opacity-10">
+            <button class="navbar-toggler bg-light-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <img src="BVDUlogo.png" class="img-thumbnail bvdu-logo">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="ms-auto">
+                <ul class="navbar-nav mb-lg-5">
+                    <li class="nav-item fs-4 m-4 px-2">
+                      <a class="nav-link text-white" aria-current="page" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item fs-4 m-4 px-2">
+                      <a class="nav-link text-white" href="#">Upcoming</a>
+                    </li>
+                    <li class="nav-item fs-4 m-4 px-2">
+                      <a href="review.html"><button class="nav-link text-white">Reviews</button></a>
+                      </li>
+                    <li class="nav-item fs-3 m-2 pt-3">
+                        <a href="login.html"><button class=" btn btn-outline-success">Log in</button></a>
+                    </li>
+                    <li class="nav-item fs-3 m-2 pt-3">
+                        <a href="signup.html"><button class="btn btn-primary">Sign up</button></a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid text-white">
+        <h1 class="text-center m-4 pb-5 display-2 main-heading">Welcome to BVDU Canteen</h1>
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner mx-auto w-75 h-50">
+              <div class="carousel-item active">
+                <img src="burger.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-block">
+                  <h1>Burger Coming Soon</h1>
+                  <h4>Freshly made Non-Veg and Veg Burgers coming soon</h4>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="vadapav.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-block">
+                  <h1>Discount on Vada Pav!</h1>
+                  <h4>40% Discount on Vada Pav for first-time buyers</h4>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="pattice.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-block">
+                  <h1>Third slide label</h1>
+                  <h4>Some representative placeholder content for the third slide.</h4>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+    <div class="container-fluid mt-5 position-relative">
+      <div class="row">
+        <div class="row">
+          <div class="col-lg-12">
+            <img src="redDeliveryGuy-removebg-preview.png" class="rounded mx-auto d-block">
+          </div>
+          <div class="col-lg-12 text-white text-center">
+            <h1 class="display-4">Get your order in seconds with our fast service</h1>
+          </div>
+          <div class="col-lg-12">
+            <img src="hotfood-removebg-preview.png" class="rounded mx-auto d-block">
+          </div>
+          <div class="col-lg-12 text-white text-center">
+            <h1 class="display-4">Freshly prepared food just to fit your needs</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+
+</body>
+</html>
