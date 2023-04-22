@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+
+    <!-- Bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-dark">
+    <div class="container-fluid">
+      <h1 class="display-1 text-center text-white">Menu</h1>
+      <div class="row ms-5 me-5">
+        <div class="col-lg-4 col-md-6">
+          <div class="card mt-5 mx-5" style="width: 22rem; height: 17rem">
+            <div class="card-body bg-dark text-white">
+              <h4 class="card-title d-inline-block">Monday</h4>
+              <h5 class="card-title d-inline-block">Price</h5>
+              <div class="row">
+                <div class="col-5">
+                  <p class="card-text fs-5">Vada pav</p>
+                </div>
+                <div class="col-5">
+                  <button
+                    type="button"
+                    onclick="Decrement('1','p01')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    -
+                  </button>
+                  <p id="1" class="card-text d-inline-block">0</p>
+                  <button
+                    type="button"
+                    onclick="Increment('1','p01')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    +
+                  </button>
+                </div>
+                <div class="col-2">
+                  <p id="p01" class="card-text fs-5">0</p>
+                </div>
+                <div class="col-5">
+                  <p class="card-text fs-5">Maggi</p>
+                </div>
+                <div class="col-5">
+                  <button
+                    type="button"
+                    onclick="Decrement('2','p02')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    -
+                  </button>
+                  <p id="2" class="card-text d-inline-block">0</p>
+                  <button
+                    type="button"
+                    onclick="Increment('2','p02')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    +
+                  </button>
+                </div>
+                <div class="col-2">
+                  <p id="p02" class="card-text fs-5">0</p>
+                </div>
+                <div class="col-5">
+                  <p class="card-text fs-5">Pasta</p>
+                </div>
+                <div class="col-5">
+                  <button
+                    type="button"
+                    onclick="Decrement('3','p03')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    -
+                  </button>
+                  <p id="3" class="card-text d-inline-block">0</p>
+                  <button
+                    type="button"
+                    onclick="Increment('3','p03')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    +
+                  </button>
+                </div>
+                <div class="col-2">
+                  <p id="p03" class="card-text fs-5">0</p>
+                </div>
+                <div class="col-5">
+                  <p class="card-text fs-5">Gulab Jamun</p>
+                </div>
+                <div class="col-5">
+                  <button
+                    type="button"
+                    onclick="Decrement('4','p04')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    -
+                  </button>
+                  <p id="4" class="card-text d-inline-block">0</p>
+                  <button
+                    type="button"
+                    onclick="Increment('4','p04')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    +
+                  </button>
+                </div>
+                <div class="col-2">
+                  <p id="p04" class="card-text fs-5">0</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card mt-5 mx-5" style="width: 22rem; height: 17rem">
+            <div class="card-body bg-dark text-white">
+              <h4 class="card-title">Tuesday</h4>
+              <div class="row">
+                <div class="col-5">
+                  <p class="card-text fs-5">Samosa</p>
+                </div>
+                <div class="col-5">
+                  <button
+                    type="button"
+                    onclick="Decrement('11','p11')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    -
+                  </button>
+                  <p id="11" class="card-text d-inline-block">0</p>
+                  <button
+                    type="button"
+                    onclick="Increment('11','p11')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    +
+                  </button>
+                </div>
+                <div class="col-2">
+                  <p id="p11" class="card-text fs-5">0</p>
+                </div>
+                <div class="col-5">
+                  <p class="card-text fs-5">Veg fried rice</p>
+                </div>
+                <div class="col-5">
+                  <button
+                    type="button"
+                    onclick="Decrement('12','p12')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    -
+                  </button>
+                  <p id="12" class="card-text d-inline-block">0</p>
+                  <button
+                    type="button"
+                    onclick="Increment('12','p12')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    +
+                  </button>
+                </div>
+                <div class="col-2">
+                  <p id="p12" class="card-text fs-5">0</p>
+                </div>
+                <div class="col-5">
+                  <p class="card-text fs-5">Chic. Fried Rice</p>
+                </div>
+                <div class="col-5">
+                  <button
+                    type="button"
+                    onclick="Decrement('13','p13')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    -
+                  </button>
+                  <p id="13" class="card-text d-inline-block">0</p>
+                  <button
+                    type="button"
+                    onclick="Increment('13','p13')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    +
+                  </button>
+                </div>
+                <div class="col-2">
+                  <p id="p13" class="card-text fs-5">0</p>
+                </div>
+                <div class="col-5">
+                  <p class="card-text fs-5">Rasgulla</p>
+                </div>
+                <div class="col-5">
+                  <button
+                    type="button"
+                    onclick="Decrement('14','p14')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    -
+                  </button>
+                  <p id="14" class="card-text d-inline-block">0</p>
+                  <button
+                    type="button"
+                    onclick="Increment('14','p14')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    +
+                  </button>
+                </div>
+                <div class="col-2">
+                  <p id="p14" class="card-text fs-5">0</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card mt-5 mx-5" style="width: 22rem; height: 17rem">
+            <div class="card-body bg-dark text-white">
+              <h4 class="card-title">Wednesday</h4>
+              <div class="row">
+                <div class="col-5">
+                  <p class="card-text fs-5">Chic. Biryani</p>
+                </div>
+                <div class="col-5">
+                  <button
+                    type="button"
+                    onclick="Decrement('21','p21')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    -
+                  </button>
+                  <p id="21" class="card-text d-inline-block">0</p>
+                  <button
+                    type="button"
+                    onclick="Increment('21','p21')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    +
+                  </button>
+                </div>
+                <div class="col-2">
+                  <p id="p21" class="card-text fs-5">0</p>
+                </div>
+                <div class="col-5">
+                  <p class="card-text fs-5">Pulav</p>
+                </div>
+                <div class="col-5">
+                  <button
+                    type="button"
+                    onclick="Decrement('22','p22')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    -
+                  </button>
+                  <p id="22" class="card-text d-inline-block">0</p>
+                  <button
+                    type="button"
+                    onclick="Increment('22','p22')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    +
+                  </button>
+                </div>
+                <div class="col-2">
+                  <p id="p22" class="card-text fs-5">0</p>
+                </div>
+                <div class="col-5">
+                  <p class="card-text fs-5">Hakka Noodles</p>
+                </div>
+                <div class="col-5">
+                  <button
+                    type="button"
+                    onclick="Decrement('23','p23')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    -
+                  </button>
+                  <p id="23" class="card-text d-inline-block">0</p>
+                  <button
+                    type="button"
+                    onclick="Increment('23','p23')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    +
+                  </button>
+                </div>
+                <div class="col-2">
+                  <p id="p23" class="card-text fs-5">0</p>
+                </div>
+                <div class="col-5">
+                  <p class="card-text fs-5">Jalebi</p>
+                </div>
+                <div class="col-5">
+                  <button
+                    type="button"
+                    onclick="Decrement('24','p24')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    -
+                  </button>
+                  <p id="24" class="card-text d-inline-block">0</p>
+                  <button
+                    type="button"
+                    onclick="Increment('24','p24')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    +
+                  </button>
+                </div>
+                <div class="col-2">
+                  <p id="p24" class="card-text fs-5">0</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card mt-5 mx-5" style="width: 22rem; height: 17rem">
+            <div class="card-body bg-dark text-white">
+              <h4 class="card-title">Thursday</h4>
+              <div class="row">
+                <div class="col-5">
+                  <p class="card-text fs-5">Veg Sandwich</p>
+                </div>
+                <div class="col-5">
+                  <button
+                    type="button"
+                    onclick="Decrement('31','p31')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    -
+                  </button>
+                  <p id="31" class="card-text d-inline-block">0</p>
+                  <button
+                    type="button"
+                    onclick="Increment('31','p31')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    +
+                  </button>
+                </div>
+                <div class="col-2">
+                  <p id="p31" class="card-text fs-5">0</p>
+                </div>
+                <div class="col-5">
+                  <p class="card-text fs-5">Chic. Sandwich</p>
+                </div>
+                <div class="col-5">
+                  <button
+                    type="button"
+                    onclick="Decrement('32','p32')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    -
+                  </button>
+                  <p id="32" class="card-text d-inline-block">0</p>
+                  <button
+                    type="button"
+                    onclick="Increment('32','p32')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    +
+                  </button>
+                </div>
+                <div class="col-2">
+                  <p id="p32" class="card-text fs-5">0</p>
+                </div>
+                <div class="col-5">
+                  <p class="card-text fs-5">Dabeli</p>
+                </div>
+                <div class="col-5">
+                  <button
+                    type="button"
+                    onclick="Decrement('33','p33')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    -
+                  </button>
+                  <p id="33" class="card-text d-inline-block">0</p>
+                  <button
+                    type="button"
+                    onclick="Increment('33','p33')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    +
+                  </button>
+                </div>
+                <div class="col-2">
+                  <p id="p33" class="card-text fs-5">0</p>
+                </div>
+                <div class="col-5">
+                  <p class="card-text fs-5">Dahi vada</p>
+                </div>
+                <div class="col-5">
+                  <button
+                    type="button"
+                    onclick="Decrement('34','p34')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    -
+                  </button>
+                  <p id="34" class="card-text d-inline-block">0</p>
+                  <button
+                    type="button"
+                    onclick="Increment('34','p34')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    +
+                  </button>
+                </div>
+                <div class="col-2">
+                  <p id="p34" class="card-text fs-5">0</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card mt-5 mx-5" style="width: 22rem; height: 16rem">
+            <div class="card-body bg-dark text-white">
+              <h4 class="card-title">Friday</h4>
+              <div class="row">
+                <div class="col-5">
+                  <p class="card-text fs-5">Manchurian</p>
+                </div>
+                <div class="col-5">
+                  <button
+                    type="button"
+                    onclick="Decrement('41','p41')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    -
+                  </button>
+                  <p id="41" class="card-text d-inline-block">0</p>
+                  <button
+                    type="button"
+                    onclick="Increment('41','p41')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    +
+                  </button>
+                </div>
+                <div class="col-2">
+                  <p id="p41" class="card-text fs-5">0</p>
+                </div>
+                <div class="col-5">
+                  <p class="card-text fs-5">Chic. Sandwich</p>
+                </div>
+                <div class="col-5">
+                  <button
+                    type="button"
+                    onclick="Decrement('42','p42')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    -
+                  </button>
+                  <p id="42" class="card-text d-inline-block">0</p>
+                  <button
+                    type="button"
+                    onclick="Increment('42','p42')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    +
+                  </button>
+                </div>
+                <div class="col-2">
+                  <p id="p42" class="card-text fs-5">0</p>
+                </div>
+                <div class="col-5">
+                  <p class="card-text fs-5">Dabeli</p>
+                </div>
+                <div class="col-5">
+                  <button
+                    type="button"
+                    onclick="Decrement('43','p43')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    -
+                  </button>
+                  <p id="43" class="card-text d-inline-block">0</p>
+                  <button
+                    type="button"
+                    onclick="Increment('43','p43')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    +
+                  </button>
+                </div>
+                <div class="col-2">
+                  <p id="p43" class="card-text fs-5">0</p>
+                </div>
+                <div class="col-5">
+                  <p class="card-text fs-5">Gulab Jamun</p>
+                </div>
+                <div class="col-5">
+                  <button
+                    type="button"
+                    onclick="Decrement('44','p44')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    -
+                  </button>
+                  <p id="44" class="card-text d-inline-block">0</p>
+                  <button
+                    type="button"
+                    onclick="Increment('44','p44')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    +
+                  </button>
+                </div>
+                <div class="col-2">
+                  <p id="p44" class="card-text fs-5">0</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card mt-5 mx-5" style="width: 22rem; height: 16rem">
+            <div class="card-body bg-dark text-white">
+              <h4 class="card-title">Saturday</h4>
+              <div class="row">
+                <div class="col-5">
+                  <p class="card-text fs-5">Pasta</p>
+                </div>
+                <div class="col-5">
+                  <button
+                    type="button"
+                    onclick="Decrement('51','p51')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    -
+                  </button>
+                  <p id="51" class="card-text d-inline-block">0</p>
+                  <button
+                    type="button"
+                    onclick="Increment('51','p51')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    +
+                  </button>
+                </div>
+                <div class="col-2">
+                  <p id="p51" class="card-text fs-5">0</p>
+                </div>
+                <div class="col-5">
+                  <p class="card-text fs-5">Chic. Frankie</p>
+                </div>
+                <div class="col-5">
+                  <button
+                    type="button"
+                    onclick="Decrement('52','p52')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    -
+                  </button>
+                  <p id="52" class="card-text d-inline-block">0</p>
+                  <button
+                    type="button"
+                    onclick="Increment('52','p52')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    +
+                  </button>
+                </div>
+                <div class="col-2">
+                  <p id="p52" class="card-text fs-5">0</p>
+                </div>
+                <div class="col-5">
+                  <p class="card-text fs-5">Veg. Frankie</p>
+                </div>
+                <div class="col-5">
+                  <button
+                    type="button"
+                    onclick="Decrement('53','p53')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    -
+                  </button>
+                  <p id="53" class="card-text d-inline-block">0</p>
+                  <button
+                    type="button"
+                    onclick="Increment('53','p53')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    +
+                  </button>
+                </div>
+                <div class="col-2">
+                  <p id="p53" class="card-text fs-5">0</p>
+                </div>
+                <div class="col-5">
+                  <p class="card-text fs-5">Rasgulla</p>
+                </div>
+                <div class="col-5">
+                  <button
+                    type="button"
+                    onclick="Decrement('54','p54')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    -
+                  </button>
+                  <p id="54" class="card-text d-inline-block">0</p>
+                  <button
+                    type="button"
+                    onclick="Increment('54','p54')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    +
+                  </button>
+                </div>
+                <div class="col-2">
+                  <p id="p54" class="card-text fs-5">0</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="menu.js" charset="UTF-8"></script>
+    <script src="priceInc.js" charset="UTF-8"></script>
+  </body>
+</html>

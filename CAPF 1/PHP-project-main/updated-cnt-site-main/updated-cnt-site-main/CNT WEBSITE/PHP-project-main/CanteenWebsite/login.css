@@ -1,0 +1,58 @@
+body {
+    background-color: hsl(0, 0%, 97%);
+    background-image: url(pattice.jpg);
+    background-repeat: no-repeat;
+    
+    
+  }
+  
+  .container-fluid {
+    margin-top: 50px;
+  }
+  
+  form {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-control:focus {
+    border-color: #17a2b8;
+    box-shadow: none;
+  }
+  
+  .btn-primary {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+  }
+  
+  .btn-primary:hover {
+    background-color: #138496;
+    border-color: #138496;
+  }
+  
+  .form-check-input:checked ~ .form-check-label {
+    color: #17a2b8;
+  }
+  
+  @keyframes shake {
+    0% {transform: translateX(0);}
+    25% {transform: translateX(10px);}
+    50% {transform: translateX(-10px);}
+    75% {transform: translateX(10px);}
+    100% {transform: translateX(0);}
+  }
+  
+  .invalid-feedback {
+    color: red;
+    display: none;
+    animation: shake 0.5s ease-in-out;
+    animation-iteration-count: 3;
+  }
+  
